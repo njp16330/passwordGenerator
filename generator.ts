@@ -3,11 +3,11 @@ const numericChars = '0123456789';
 const lowerAlphabetChars = 'abcdefghijklmnopqrstuvwxyz';
 const upperAlphabetChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-export function passwordGenerator(): string{    
+export function passwordGenerator(length: number): string{    
     const charset = specialChars + numericChars + 
         lowerAlphabetChars + upperAlphabetChars;
 
-    let password = randomStringGenerator(charset, 16);
+    let password = randomStringGenerator(charset, length);
 
     //write code to make sure there are special characters, numbers, uppercase and lowercase letters
 

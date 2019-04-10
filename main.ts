@@ -4,7 +4,7 @@ import * as fs from "fs";
 let hundredPasswords = '';
 
 for(let i = 0; i < 100; i++){
-    hundredPasswords += '\n' + passwordGenerator();
+    hundredPasswords += '\n' + passwordGenerator(24);
 }
 
 fs.writeFile('./passwordList.txt', hundredPasswords, function(err) {

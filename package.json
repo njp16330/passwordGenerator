@@ -6,7 +6,9 @@
   "dependencies": {
     "base62": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^11.13.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
